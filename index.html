@@ -70,6 +70,7 @@
                 <a href="#features" class="hover:text-yellow-600 transition">核心功能</a>
                 <a href="#lab" class="hover:text-yellow-600 transition">压力实验室</a>
                 <a href="#ai" class="hover:text-yellow-600 transition">AI 助手</a>
+                <a href="#contact" class="hover:text-yellow-600 transition">联系我们</a>
             </div>
             <button class="bg-yellow-400 hover:bg-yellow-500 text-yellow-900 px-5 py-2 rounded-full text-sm font-bold transition shadow-lg shadow-yellow-200">
                 立即下载
@@ -86,7 +87,7 @@
                     <span class="text-yellow-700">抚平生活的焦躁</span>
                 </h1>
                 <p class="mt-6 text-lg text-slate-700 leading-relaxed max-w-lg">
-                    ZenLemon 基于 Apple Watch HRV 数据，通过 Zen-Mind 智能算法，为你提供实时的压力监测与疗愈建议。让健康不止于数据，更是一次心灵的呼吸。
+                    ZenLemon 基于 Apple Watch HRV 数据，通过 Zen-Mind 智能算法，为你提供实时的压力监测与疗愈建议。让健康不止于数据，更是一次心灵的呼吸制。
                 </p>
                 <div class="mt-10 flex flex-wrap gap-4">
                     <div class="flex items-center bg-black text-white px-6 py-3 rounded-2xl cursor-pointer hover:bg-slate-800 transition">
@@ -190,7 +191,7 @@
         </div>
     </section>
 
-    <!-- AI 建议展示 (恢复并优化文案) -->
+    <!-- AI 建议展示 -->
     <section id="ai" class="py-24 px-6 overflow-hidden bg-white">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
             <div class="flex-1 order-2 md:order-1">
@@ -237,7 +238,49 @@
         </div>
     </section>
 
-    <!-- Watch 适配 (恢复并优化展示) -->
+    <!-- 联系我们 (App Store 支持页核心) -->
+    <section id="contact" class="py-24 bg-yellow-50/50 px-6">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">联系我们</h2>
+                <p class="text-slate-500 mt-4">遇到问题或有好的建议？我们随时倾听。</p>
+            </div>
+            
+            <div id="contact-container" class="glass-card p-8 md:p-12 rounded-[2.5rem] shadow-xl border-white relative min-h-[400px] flex flex-col justify-center">
+                <!-- 初始表单 -->
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">姓名</label>
+                            <input type="text" required class="w-full px-5 py-3 rounded-2xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-yellow-400 outline-none transition" placeholder="如何称呼您？">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">邮箱</label>
+                            <input type="email" required class="w-full px-5 py-3 rounded-2xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-yellow-400 outline-none transition" placeholder="your@email.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">留言内容</label>
+                        <textarea required rows="4" class="w-full px-5 py-3 rounded-2xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-yellow-400 outline-none transition" placeholder="请描述您的问题或建议..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 rounded-2xl transition shadow-lg flex items-center justify-center space-x-2">
+                        <span>提交反馈</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </button>
+                </form>
+
+                <!-- 成功提示 (初始隐藏) -->
+                <div id="success-message" class="hidden text-center animate__animated animate__zoomIn">
+                    <div class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6 text-4xl">✓</div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">提交成功！</h3>
+                    <p class="text-slate-500">感谢您的反馈，我们的团队会尽快处理并在 24 小时内回复您。</p>
+                    <button onclick="resetForm()" class="mt-8 text-yellow-600 font-bold hover:underline">再次发送</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watch 适配 -->
     <section class="py-20 bg-slate-900 text-white px-6">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -257,7 +300,6 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <!-- 模拟 Apple Watch -->
                 <div class="w-44 h-52 bg-slate-800 rounded-[2.2rem] border-[6px] border-slate-700 shadow-2xl flex flex-col items-center justify-center p-4 relative">
                     <div class="text-3xl mb-1">🍋</div>
                     <div class="text-3xl font-black text-yellow-400">42</div>
@@ -278,12 +320,13 @@
             <div class="text-slate-400 text-sm">&copy; 2024 ZenLemon 健康实验室. 保留所有权利。</div>
             <div class="flex space-x-6 mt-6 md:mt-0">
                 <a href="#" class="text-slate-400 hover:text-yellow-600 text-xs">隐私政策</a>
-                <a href="#" class="text-slate-400 hover:text-yellow-600 text-xs">联系我们</a>
+                <a href="#contact" class="text-slate-400 hover:text-yellow-600 text-xs">支持与反馈</a>
             </div>
         </div>
     </footer>
 
     <script>
+        // 压力实验室逻辑
         const slider = document.getElementById('stress-slider');
         const scoreLabel = document.getElementById('score-label');
         const mascot = document.getElementById('mascot-visual');
@@ -309,6 +352,33 @@
             statusText.style.color = state.color;
             mascot.style.transform = `scale(${1 + (val / 200)})`;
         });
+
+        // 联系我们表单模拟逻辑
+        const contactForm = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // 模拟提交过程中的加载状态
+            const btn = contactForm.querySelector('button');
+            const originalContent = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '<span class="animate-pulse">发送中...</span>';
+
+            setTimeout(() => {
+                contactForm.classList.add('hidden');
+                successMessage.classList.remove('hidden');
+                btn.disabled = false;
+                btn.innerHTML = originalContent;
+            }, 1000);
+        });
+
+        function resetForm() {
+            contactForm.reset();
+            contactForm.classList.remove('hidden');
+            successMessage.classList.add('hidden');
+        }
     </script>
 </body>
 </html>
