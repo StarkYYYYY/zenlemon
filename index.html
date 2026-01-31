@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>柠静 - 你的AI压力管理助手</title>
+    <title>ZenLemon - 你的AI压力管理助手</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <style>
@@ -64,7 +64,7 @@
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <span class="text-2xl">🍋</span>
-                <span class="text-xl font-bold tracking-tight text-slate-900">柠静 NingJing</span>
+                <span class="text-xl font-bold tracking-tight text-slate-900">ZenLemon</span>
             </div>
             <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="#features" class="hover:text-yellow-600 transition">核心功能</a>
@@ -86,7 +86,7 @@
                     <span class="text-yellow-700">抚平生活的焦躁</span>
                 </h1>
                 <p class="mt-6 text-lg text-slate-700 leading-relaxed max-w-lg">
-                    柠静基于 Apple Watch HRV 数据，通过科学算法与 DeepSeek AI 结合，为你提供实时的压力监测与疗愈建议。让健康不止于数据，更是一次心灵的呼吸。
+                    ZenLemon 基于 Apple Watch HRV 数据，通过 Zen-Mind 智能算法，为你提供实时的压力监测与疗愈建议。让健康不止于数据，更是一次心灵的呼吸。
                 </p>
                 <div class="mt-10 flex flex-wrap gap-4">
                     <div class="flex items-center bg-black text-white px-6 py-3 rounded-2xl cursor-pointer hover:bg-slate-800 transition">
@@ -99,15 +99,13 @@
                 </div>
             </div>
             <div class="relative flex justify-center animate__animated animate__fadeInRight">
-                <!-- 模拟手机/Watch 展示 -->
                 <div class="w-64 h-[500px] bg-slate-900 rounded-[3rem] border-8 border-slate-800 shadow-2xl overflow-hidden relative">
                     <div class="absolute top-0 w-full h-6 bg-slate-800 flex justify-center">
                         <div class="w-20 h-4 bg-slate-900 rounded-b-xl"></div>
                     </div>
-                    <!-- App 内容模拟 -->
                     <div class="p-6 pt-10 h-full flex flex-col bg-white">
-                        <div class="flex justify-between items-center mb-6">
-                            <span class="font-bold text-slate-400 text-xs">下午 5:00</span>
+                        <div class="flex justify-between items-center mb-6 text-[10px] text-slate-400">
+                            <span>下午 5:00</span>
                             <div class="flex space-x-1">
                                 <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
                             </div>
@@ -115,7 +113,7 @@
                         <div class="bg-yellow-50 p-4 rounded-3xl flex-1 flex flex-col items-center justify-center text-center">
                             <div id="phone-mascot" class="text-6xl mb-4 transition-transform duration-500">🍋</div>
                             <div class="text-4xl font-black text-yellow-600 mb-1" id="phone-score">42</div>
-                            <div class="text-sm font-medium text-yellow-800">当前压力值：平稳</div>
+                            <div class="text-sm font-medium text-yellow-800">状态：平稳</div>
                             <div class="mt-6 w-full h-16 bg-white/50 rounded-2xl flex items-center px-4 overflow-hidden">
                                 <div class="w-1 h-8 bg-yellow-400 rounded-full mx-0.5 animate-pulse"></div>
                                 <div class="w-1 h-12 bg-yellow-400 rounded-full mx-0.5 animate-pulse"></div>
@@ -129,11 +127,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- 漂浮元素 -->
                 <div class="absolute -top-10 -right-10 bg-white p-4 rounded-2xl shadow-xl flex items-center space-x-3 animate-bounce">
                     <span class="text-2xl">⌚️</span>
                     <div>
-                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Live Sync</p>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Auto Sync</p>
                         <p class="text-sm font-bold text-slate-800">已同步 Watch 数据</p>
                     </div>
                 </div>
@@ -149,160 +146,138 @@
                 <p class="text-slate-500 mt-4">科学、智能、有温度的健康管理</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- 卡片 1 -->
                 <div class="feature-card glass-card p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition">
                     <div class="w-14 h-14 bg-blue-50 flex items-center justify-center rounded-2xl text-2xl mb-6">📊</div>
                     <h3 class="text-xl font-bold mb-4">科学压力监测</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        基于 Apple Watch HRV（心率变异性）深度分析，结合临床心理学模型，将抽象的压力具象化为 0-100 的直观评分。
-                    </p>
+                    <p class="text-slate-600 leading-relaxed">利用高精度 HRV 分析技术，将难以察觉的情绪波动转化为直观的压力指数。</p>
                 </div>
-                <!-- 卡片 2 -->
                 <div class="feature-card glass-card p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition">
-                    <div class="w-14 h-14 bg-yellow-50 flex items-center justify-center rounded-2xl text-2xl mb-6">🤖</div>
-                    <h3 class="text-xl font-bold mb-4">AI 智能分析</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        搭载 DeepSeek AI 模型，根据你的历史数据与当前状态，提供个性化的疗愈建议，不再是冷冰冰的数字统计。
-                    </p>
+                    <div class="w-14 h-14 bg-yellow-50 flex items-center justify-center rounded-2xl text-2xl mb-6">🧠</div>
+                    <h3 class="text-xl font-bold mb-4">ZenLemon 智能模型</h3>
+                    <p class="text-slate-600 leading-relaxed">内置专属 AI 健康引擎，基于多维数据提供个性化的心理调适方案与对话引导。</p>
                 </div>
-                <!-- 卡片 3 -->
                 <div class="feature-card glass-card p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition">
                     <div class="w-14 h-14 bg-green-50 flex items-center justify-center rounded-2xl text-2xl mb-6">📈</div>
-                    <h3 class="text-xl font-bold mb-4">多维度追踪</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        整合睡眠质量、步数统计、卡路里消耗。生成 7 天压力趋势图，帮你找出生活中潜在的“压力源”。
-                    </p>
+                    <h3 class="text-xl font-bold mb-4">长期趋势追踪</h3>
+                    <p class="text-slate-600 leading-relaxed">整合睡眠、运动与压力关联，自动生成健康周报，辅助你建立长期的情绪管理习惯。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 互动实验区 -->
+    <!-- 互动实验室 -->
     <section id="lab" class="py-20 bg-slate-50 px-6">
         <div class="max-w-5xl mx-auto glass-card p-12 rounded-[3rem] shadow-2xl relative overflow-hidden">
             <div class="grid md:grid-cols-2 gap-12 items-center relative z-10">
                 <div>
                     <h2 class="text-4xl font-black text-slate-900 mb-6">压力实验室</h2>
-                    <p class="text-slate-600 mb-8">
-                        拖动滑块模拟不同的压力水平，看看“柠小檬”会给你什么样的回应。
-                    </p>
+                    <p class="text-slate-600 mb-8">拖动滑块模拟不同的压力水平，看看 ZenLemon 会如何给你温柔的回应。</p>
                     <div class="space-y-6">
                         <div class="flex justify-between font-bold text-sm text-slate-400">
-                            <span>放松 (0)</span>
+                            <span>轻松 (0)</span>
                             <span id="score-label" class="text-yellow-600 text-xl font-black">42</span>
-                            <span>极限 (100)</span>
+                            <span>焦虑 (100)</span>
                         </div>
                         <input type="range" min="0" max="100" value="42" class="slider" id="stress-slider">
                     </div>
                 </div>
                 <div class="flex flex-col items-center">
                     <div id="mascot-visual" class="mascot-container text-[120px] mb-6 drop-shadow-2xl">🍋</div>
-                    <div id="status-text" class="text-center font-bold text-xl py-3 px-8 rounded-full bg-white shadow-sm transition-colors duration-300">
-                        状态良好，保持微笑
-                    </div>
+                    <div id="status-text" class="text-center font-bold text-xl py-3 px-8 rounded-full bg-white shadow-sm transition-colors duration-300">状态良好，保持微笑</div>
                 </div>
             </div>
-            <!-- 背景装饰 -->
             <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-yellow-200/30 rounded-full blur-3xl"></div>
         </div>
     </section>
 
-    <!-- AI 建议展示 -->
-    <section id="ai" class="py-24 px-6 overflow-hidden">
+    <!-- AI 建议展示 (恢复并优化文案) -->
+    <section id="ai" class="py-24 px-6 overflow-hidden bg-white">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
             <div class="flex-1 order-2 md:order-1">
                 <div class="space-y-4">
                     <div class="flex items-start space-x-4 animate__animated animate__fadeInUp">
                         <div class="bg-yellow-400 p-2 rounded-xl text-xl">🍋</div>
                         <div class="bg-white border p-4 rounded-2xl rounded-tl-none shadow-sm max-w-sm">
-                            <p class="text-sm font-medium">你好！监测到你最近 3 小时压力持续在 75 以上，是因为明早的会议吗？</p>
+                            <p class="text-sm font-medium">监测到你最近压力偏高，是因为繁忙的工作吗？</p>
                         </div>
                     </div>
                     <div class="flex items-start justify-end space-x-4 animate__animated animate__fadeInUp animate__delay-1s">
-                        <div class="bg-blue-500 text-white p-4 rounded-2xl rounded-tr-none shadow-sm max-w-sm">
+                        <div class="bg-slate-800 text-white p-4 rounded-2xl rounded-tr-none shadow-sm max-w-sm">
                             <p class="text-sm">是的，感觉有点透不过气。</p>
                         </div>
-                        <div class="bg-slate-200 p-2 rounded-xl text-xl">👤</div>
                     </div>
                     <div class="flex items-start space-x-4 animate__animated animate__fadeInUp animate__delay-2s">
                         <div class="bg-yellow-400 p-2 rounded-xl text-xl">🍋</div>
                         <div class="bg-white border p-4 rounded-2xl rounded-tl-none shadow-sm max-w-sm border-yellow-200">
-                            <p class="text-sm font-medium">没事的。DeepSeek 为你生成了一个 5 分钟的“云端漫步”冥想方案，我们要不要试一下？它能有效平衡你的 HRV 频率。</p>
+                            <p class="text-sm font-medium">我为你生成了一个 3 分钟的“午间放空”练习。它能有效平衡你的心率频率，要试试看吗？</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex-1 order-1 md:order-2">
-                <h2 class="text-4xl font-bold mb-6">治愈系 AI 建议</h2>
-                <p class="text-lg text-slate-600 leading-relaxed mb-8 text-justify">
-                    不同于传统的“多喝热水”，柠静 AI 深度学习了上万种心理干预策略。它能识别你的情绪拐点，在最需要的时候提供恰到好处的温暖与科学引导。
+                <h2 class="text-4xl font-bold mb-6">更懂你的 AI 助手</h2>
+                <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                    我们自研的 AI 模型不仅仅是分析数据，更懂得识别你的压力拐点。它会像老朋友一样，在最需要的时候提供恰到好处的建议。
                 </p>
                 <ul class="space-y-4">
-                    <li class="flex items-center text-slate-700">
-                        <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3 text-xs">✓</span>
-                        基于 DeepSeek R1 深度思维模型
+                    <li class="flex items-center text-slate-700 font-medium">
+                        <span class="w-6 h-6 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mr-3 text-xs">✓</span>
+                        ZenLemon 自研情绪识别模型
                     </li>
-                    <li class="flex items-center text-slate-700">
-                        <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3 text-xs">✓</span>
-                        离线模式自动切换本地轻量算法
+                    <li class="flex items-center text-slate-700 font-medium">
+                        <span class="w-6 h-6 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mr-3 text-xs">✓</span>
+                        数据完全加密，隐私本地化处理
                     </li>
-                    <li class="flex items-center text-slate-700">
-                        <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3 text-xs">✓</span>
-                        支持 Siri 语音快捷放松指令
+                    <li class="flex items-center text-slate-700 font-medium">
+                        <span class="w-6 h-6 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mr-3 text-xs">✓</span>
+                        支持 Siri 放松快捷指令
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Watch 适配 -->
-    <section class="py-20 bg-black text-white px-6">
+    <!-- Watch 适配 (恢复并优化展示) -->
+    <section class="py-20 bg-slate-900 text-white px-6">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <h2 class="text-4xl font-bold mb-6">为 Apple Watch 而生</h2>
+                <h2 class="text-4xl font-bold mb-6">为 Apple Watch 深度定制</h2>
                 <p class="text-slate-400 text-lg mb-10 leading-relaxed">
-                    无需打开手机，抬腕即可查看当前压力评分。精美设计的复杂功能（Complications）支持所有主流表盘，让健康监测融入每一秒。
+                    抬腕即看。我们精心设计了多种样式的复杂功能（Complications），让压力分数完美融入你的日常表盘。
                 </p>
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="bg-slate-900 p-6 rounded-3xl border border-slate-800">
-                        <h4 class="font-bold mb-2">全天候监测</h4>
-                        <p class="text-xs text-slate-500 italic">自动采集 HRV，无需手动干预。</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-800 p-6 rounded-3xl">
+                        <h4 class="font-bold text-yellow-400 mb-2">自动监测</h4>
+                        <p class="text-xs text-slate-500">在后台静默分析你的 HRV 数据，无需额外操作。</p>
                     </div>
-                    <div class="bg-slate-900 p-6 rounded-3xl border border-slate-800">
-                        <h4 class="font-bold mb-2">深度测量模式</h4>
-                        <p class="text-xs text-slate-500 italic">引导你进行一分钟静息测量。</p>
+                    <div class="bg-slate-800 p-6 rounded-3xl">
+                        <h4 class="font-bold text-yellow-400 mb-2">一键测量</h4>
+                        <p class="text-xs text-slate-500">通过“呼吸”模式提供更精准的深度测量报告。</p>
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center relative">
+            <div class="flex justify-center">
                 <!-- 模拟 Apple Watch -->
-                <div class="w-48 h-56 bg-slate-800 rounded-[2.5rem] border-[6px] border-slate-700 shadow-2xl flex flex-col items-center justify-center p-4 relative">
-                    <div class="absolute inset-2 border border-slate-700 rounded-[2rem] opacity-20"></div>
-                    <div class="text-3xl mb-2">🍋</div>
+                <div class="w-44 h-52 bg-slate-800 rounded-[2.2rem] border-[6px] border-slate-700 shadow-2xl flex flex-col items-center justify-center p-4 relative">
+                    <div class="text-3xl mb-1">🍋</div>
                     <div class="text-3xl font-black text-yellow-400">42</div>
-                    <div class="text-[8px] tracking-widest text-slate-500 uppercase mt-1">HRV STRESS</div>
-                    <!-- 表盘刻度 -->
-                    <div class="absolute inset-4 rounded-full border-2 border-yellow-400/30 border-t-yellow-400 rotate-45"></div>
+                    <div class="text-[8px] tracking-widest text-slate-500 uppercase mt-1">Zen Score</div>
+                    <div class="absolute inset-3 rounded-full border-2 border-yellow-400/20 border-t-yellow-400 rotate-12"></div>
                 </div>
-                <!-- 装饰线 -->
-                <div class="absolute -z-10 w-full h-full bg-yellow-400/10 blur-[100px] rounded-full"></div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-12 bg-white border-t px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center">
             <div class="flex items-center space-x-2 mb-6 md:mb-0">
                 <span class="text-2xl">🍋</span>
-                <span class="text-xl font-bold tracking-tight text-slate-900">柠静</span>
+                <span class="text-xl font-bold tracking-tight text-slate-900">ZenLemon</span>
             </div>
-            <div class="text-slate-400 text-sm">
-                &copy; 2024 柠静健康实验室. 保留所有权利。
-            </div>
+            <div class="text-slate-400 text-sm">&copy; 2024 ZenLemon 健康实验室. 保留所有权利。</div>
             <div class="flex space-x-6 mt-6 md:mt-0">
                 <a href="#" class="text-slate-400 hover:text-yellow-600 text-xs">隐私政策</a>
-                <a href="#" class="text-slate-400 hover:text-yellow-600 text-xs">用户协议</a>
                 <a href="#" class="text-slate-400 hover:text-yellow-600 text-xs">联系我们</a>
             </div>
         </div>
@@ -313,41 +288,26 @@
         const scoreLabel = document.getElementById('score-label');
         const mascot = document.getElementById('mascot-visual');
         const statusText = document.getElementById('status-text');
-        
         const phoneScore = document.getElementById('phone-score');
         const phoneMascot = document.getElementById('phone-mascot');
 
         const states = [
-            { threshold: 25, emoji: '😎', text: '极度放松，享受当下', color: '#4ade80', bg: '#f0fdf4' },
-            { threshold: 50, emoji: '🍋', text: '状态良好，保持微笑', color: '#facc15', bg: '#fefce8' },
-            { threshold: 75, emoji: '😐', text: '压力上升，建议深呼吸', color: '#fb923c', bg: '#fff7ed' },
-            { threshold: 100, emoji: '😵‍💫', text: '压力过大！立刻休息', color: '#ef4444', bg: '#fef2f2' }
+            { threshold: 25, emoji: '😎', text: '极度放松，享受当下', color: '#4ade80' },
+            { threshold: 50, emoji: '🍋', text: '状态良好，保持微笑', color: '#facc15' },
+            { threshold: 75, emoji: '😐', text: '压力上升，建议深呼吸', color: '#fb923c' },
+            { threshold: 100, emoji: '😵‍💫', text: '压力过大！立刻休息', color: '#ef4444' }
         ];
 
         slider.addEventListener('input', (e) => {
             const val = e.target.value;
             scoreLabel.innerText = val;
             phoneScore.innerText = val;
-
-            // 查找对应状态
             const state = states.find(s => val <= s.threshold);
-            
-            // 更新 UI
             mascot.innerText = state.emoji;
             phoneMascot.innerText = state.emoji;
             statusText.innerText = state.text;
             statusText.style.color = state.color;
-            statusText.style.backgroundColor = 'white';
-
-            // 缩放动效
-            const scale = 1 + (val / 200);
-            mascot.style.transform = `scale(${scale})`;
-            
-            // 手机模拟器震动效果
-            if(val > 80) {
-                phoneMascot.classList.add('animate__animated', 'animate__headShake');
-                setTimeout(() => phoneMascot.classList.remove('animate__animated', 'animate__headShake'), 500);
-            }
+            mascot.style.transform = `scale(${1 + (val / 200)})`;
         });
     </script>
 </body>
