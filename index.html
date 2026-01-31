@@ -55,6 +55,10 @@
         .mascot-container {
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
+        .logo-img {
+            object-fit: contain;
+        }
     </style>
 </head>
 <body class="text-slate-800">
@@ -63,7 +67,7 @@
     <nav class="fixed w-full z-50 glass-card px-6 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <span class="text-2xl">🍋</span>
+                <img src="logo.png" class="w-8 h-8 logo-img" alt="ZenLemon Logo">
                 <span class="text-xl font-bold tracking-tight text-slate-900">ZenLemon</span>
             </div>
             <div class="hidden md:flex space-x-8 text-sm font-medium">
@@ -108,6 +112,7 @@
                     </div>
                     
                     <div class="h-full w-full bg-slate-100 relative">
+                        <!-- 使用你上传的 IMG_9109.PNG -->
                         <img src="IMG_9109.PNG" alt="ZenLemon App 截图" class="w-full h-full object-cover">
                         
                         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 w-full px-6 pointer-events-none">
@@ -143,7 +148,9 @@
                     <p class="text-slate-600 leading-relaxed">利用高精度 HRV 分析技术，将难以察觉的情绪波动转化为直观的压力指数。</p>
                 </div>
                 <div class="feature-card glass-card p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition text-center md:text-left">
-                    <div class="w-14 h-14 bg-yellow-50 flex items-center justify-center rounded-2xl text-2xl mb-6 mx-auto md:mx-0">🧠</div>
+                    <div class="w-14 h-14 bg-yellow-50 flex items-center justify-center rounded-2xl mb-6 mx-auto md:mx-0 overflow-hidden">
+                        <img src="logo.png" class="w-10 h-10 logo-img" alt="logo">
+                    </div>
                     <h3 class="text-xl font-bold mb-4">ZenLemon 智能模型</h3>
                     <p class="text-slate-600 leading-relaxed">内置专属 AI 健康引擎，基于多维数据提供个性化的心理调适方案与对话引导。</p>
                 </div>
@@ -173,7 +180,9 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div id="mascot-visual" class="mascot-container text-[120px] mb-6 drop-shadow-2xl">🍋</div>
+                    <div class="mascot-container mb-6 drop-shadow-2xl">
+                        <img id="mascot-visual" src="logo.png" class="w-32 h-32 logo-img" alt="Mascot">
+                    </div>
                     <div id="status-text" class="text-center font-bold text-xl py-3 px-8 rounded-full bg-white shadow-sm transition-colors duration-300">状态良好，保持微笑</div>
                 </div>
             </div>
@@ -187,7 +196,9 @@
             <div class="flex-1 order-2 md:order-1">
                 <div class="space-y-4">
                     <div class="flex items-start space-x-4 animate__animated animate__fadeInUp">
-                        <div class="bg-yellow-400 p-2 rounded-xl text-xl">🍋</div>
+                        <div class="bg-yellow-400 p-2 rounded-xl">
+                            <img src="logo.png" class="w-6 h-6 logo-img" alt="AI">
+                        </div>
                         <div class="bg-white border p-4 rounded-2xl rounded-tl-none shadow-sm max-w-sm">
                             <p class="text-sm font-medium">监测到你最近压力偏高，是因为繁忙的工作吗？</p>
                         </div>
@@ -198,7 +209,9 @@
                         </div>
                     </div>
                     <div class="flex items-start space-x-4 animate__animated animate__fadeInUp animate__delay-2s">
-                        <div class="bg-yellow-400 p-2 rounded-xl text-xl">🍋</div>
+                        <div class="bg-yellow-400 p-2 rounded-xl">
+                            <img src="logo.png" class="w-6 h-6 logo-img" alt="AI">
+                        </div>
                         <div class="bg-white border p-4 rounded-2xl rounded-tl-none shadow-sm max-w-sm border-yellow-200">
                             <p class="text-sm font-medium">我为你生成了一个 3 分钟的“午间放空”练习。它能有效平衡你的心率频率，要试试看吗？</p>
                         </div>
@@ -289,7 +302,7 @@
             </div>
             <div class="flex justify-center mt-12 md:mt-0">
                 <div class="w-44 h-52 bg-slate-800 rounded-[2.2rem] border-[6px] border-slate-700 shadow-2xl flex flex-col items-center justify-center p-4 relative">
-                    <div class="text-3xl mb-1">🍋</div>
+                    <img src="logo.png" class="w-10 h-10 mb-2 logo-img" alt="Watch Logo">
                     <div class="text-3xl font-black text-yellow-400">42</div>
                     <div class="text-[8px] tracking-widest text-slate-500 uppercase mt-1">Zen Score</div>
                     <div class="absolute inset-3 rounded-full border-2 border-yellow-400/20 border-t-yellow-400 rotate-12"></div>
@@ -302,10 +315,10 @@
     <footer class="py-12 bg-white border-t px-6">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center">
             <div class="flex items-center space-x-2 mb-6 md:mb-0">
-                <span class="text-2xl">🍋</span>
+                <img src="logo.png" class="w-8 h-8 logo-img" alt="logo">
                 <span class="text-xl font-bold tracking-tight text-slate-900">ZenLemon</span>
             </div>
-            <div class="text-slate-400 text-sm">&copy; 2024 ZenLemon 健康实验室. 保留所有权利。</div>
+            <div class="text-slate-400 text-sm">&copy; 2026 ZenLemon 保留所有权利。</div>
             <div class="flex space-x-6 mt-6 md:mt-0">
                 <a href="#" class="text-slate-400 hover:text-yellow-600 text-xs">隐私政策</a>
                 <a href="#contact" class="text-slate-400 hover:text-yellow-600 text-xs">支持与反馈</a>
@@ -314,28 +327,40 @@
     </footer>
 
     <script>
+        // 压力实验室逻辑
         const slider = document.getElementById('stress-slider');
         const scoreLabel = document.getElementById('score-label');
-        const mascot = document.getElementById('mascot-visual');
+        const mascotImg = document.getElementById('mascot-visual');
         const statusText = document.getElementById('status-text');
 
         const states = [
-            { threshold: 25, emoji: '😎', text: '极度放松，享受当下', color: '#4ade80' },
-            { threshold: 50, emoji: '🍋', text: '状态良好，保持微笑', color: '#facc15' },
-            { threshold: 75, emoji: '😐', text: '压力上升，建议深呼吸', color: '#fb923c' },
-            { threshold: 100, emoji: '😵‍💫', text: '压力过大！立刻休息', color: '#ef4444' }
+            { threshold: 25, text: '极度放松，享受当下', color: '#4ade80' },
+            { threshold: 50, text: '状态良好，保持微笑', color: '#facc15' },
+            { threshold: 75, text: '压力上升，建议深呼吸', color: '#fb923c' },
+            { threshold: 100, text: '压力过大！立刻休息', color: '#ef4444' }
         ];
 
         slider.addEventListener('input', (e) => {
             const val = e.target.value;
             scoreLabel.innerText = val;
             const state = states.find(s => val <= s.threshold);
-            mascot.innerText = state.emoji;
+            
             statusText.innerText = state.text;
             statusText.style.color = state.color;
-            mascot.style.transform = `scale(${1 + (val / 200)})`;
+            
+            // 缩放 logo 图片
+            const scale = 1 + (val / 200);
+            mascotImg.style.transform = `scale(${scale})`;
+            
+            // 如果压力过大，增加一点滤镜效果模拟紧张感
+            if (val > 80) {
+                mascotImg.style.filter = `hue-rotate(${val - 80}deg) saturate(1.5)`;
+            } else {
+                mascotImg.style.filter = `none`;
+            }
         });
 
+        // 联系我们表单模拟逻辑
         const contactForm = document.getElementById('contact-form');
         const successMessage = document.getElementById('success-message');
 
